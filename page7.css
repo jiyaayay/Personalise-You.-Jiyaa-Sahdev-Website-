@@ -1,0 +1,215 @@
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image responsive */
+  
+  .container img {
+    width: 100%;
+    height: 60%;
+    display: inline-block;
+    margin-left: 20px;
+
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    right: 150px;
+    margin-left: 150px;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #da5794;
+    color: rgb(6, 5, 6);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px;
+  }
+  
+  .container .btn:hover {
+    background-color: rgb(236, 30, 236);
+  }
+  .navbar {
+    width: 100%;
+    background-color: #f082c0;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #fd71f1;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #d115d8;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+  body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("backgroundimage.avif");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    display: inline-block;
+  
+    /* Full height */
+    height: 60%;
+    width: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.checked {
+  color: orange;
+  text-align: right;
+  height: 300px;
+  
+  div {
+    max-width: 500px;
+    height: 100px;
+    background-color: powderblue;
+  }
+  
+  new Chart("myChart", {
+    type; "pie" 
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "World Wide Wine Production"
+      }
+    }
+  });
+  
+  .piechart
+  { 
+    text-align: right;
+    width: 100px;
+    height: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 100%; 
+    left: 100%; 
+    display: inline-block;
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 300px;
+    font-size: 100px;
+    padding: 0px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .video1 
+  { 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 100;
+  }
+.background-video
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5;
+  width: 115%;
+  height: 140%;
+
+}
+video{
+  display: inline-block;
+  width: 100%;
+  background-attachment: fixed;
+  height: 85%;
+  margin: 0 3px 100px 5px;
+  vertical-align: top;
+  padding-top: 100px 5px;
+}
+
