@@ -1,0 +1,121 @@
+
+
+
+<!-- =====================================
+     External CSS File Linking
+     =====================================
+     Link to the external stylesheet (page7.css) that contains styles for this page.
+     Make sure the CSS file is correctly named and located in the same directory.
+-->
+<link rel="stylesheet" href="page7.css">
+<!-- ==============================
+     Background Image and Text Section
+     ==============================
+     -->
+<div class="bg-image"></div>
+<div class="bg-text">
+  <!-- Page Heading -->
+    <h1>Meet the community!</h1>
+    <!-- Brief Description -->
+    <p>Reviews and dreams come true! </p>
+  </div>
+<!-- ===========================
+     Navigation Bar
+     ===========================
+     A fixed navigation bar providing quick links to other pages.
+     The 'active' class highlights the current page.
+--> 
+<div class="navbar">
+  <a class="active" href="page4.html"><i class="fa fa-fw fa-home"></i> Home</a> <!-- Home Page Link -->
+  <a href="signuplogin.html"><i class="fa fa-fw fa-search"></i> Login/Sign Up </a> <!-- Login/Sign Up Page Link -->
+  <a href="page8.html"><i class="fa fa-fw fa-envelope"></i> Gallery</a> <!-- Gallery Page Link -->
+  <a href="medialibraryreal.html"><i class="fa fa-fw fa-user"></i> Media Library </a> <!-- Media Library Link -->
+  <a href="aboutpage.html"><i class="fa fa-fw fa-user"></i> About Us! </a> <!-- About Us Page Link -->
+  <a href="page3.html"><i class="fa fa-fw fa-user"></i> Contact US</a> <!-- Contact Us Page Link -->
+  
+ <!-- ===========================
+         Background Video
+         ===========================
+-->
+    
+    
+    <video autoplay muted play-inline class='background-video'>
+      <source src="SCROLL DOWN FOR MORE INFORMATION!!.mp4" type="video/mp4">
+    </video>
+    /</div>
+
+
+
+
+<link rel="stylesheet" href="page7.css">
+<!-- =======================================
+     Community Highlight Section - Dillen
+     =======================================
+     Image and button section to highlight a personalized success story.
+-->
+<div class="container">
+    <img src="photo.jpg" alt="dreamcar">
+    <button class="btn">Click HERE, to learn more about Dillen and his Dream Car come true, with PERSONALISE YOU! </button>
+  </div>
+
+
+<!-- =======================================
+     Community Highlight Section - Mary
+     =======================================
+     Image and button section for another personalized success story.
+-->
+<div class="container">
+    <img src="fashionimage.jpg" alt="Dream Fashion">
+    <button class="btn">Click HERE, to learn more about Mary and her Dream fasion come true, with PERSONALISE YOU! </button>
+  </div>
+
+  <html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <body>
+      <!-- ==============================
+     Pie Chart Section
+     ==============================
+     A pie chart visualizing the importance of creativity and innovation over the years.
+     This uses the Chart.js library, which must be loaded via a CDN.
+-->
+    
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas> <!-- Defines a canvas element where the chart will be rendered -->
+    <div class = "piechart"> <!-- A div container for the pie chart, which helps with styling -->
+    <script>
+    const xValues = ["2024", "2020", "2015", "2010", "2000"]; // Define labels for the pie chart sections
+    const yValues = [60, 50, 45, 25, 16]; // Define the corresponding data values for each label
+    const barColors = [  // Define color codes for each slice in the pie chart
+      "#b91d47", // Red
+      "#00aba9", // Teal
+      "#2b5797", // Dark Blue
+      "#e8c3b9", // Beige
+      "#1e7145"  // Green
+    ];
+    // Create a new Chart object
+
+    // Create a new chart instance and associate it with the element "myChart"
+    
+    new Chart("myChart", {
+    
+      type: "pie",  // Define the chart type as a pie chart
+      data: {  // Set the data for the chart
+        labels: xValues,  // Labels for each slice in the pie chart
+        datasets: [{
+          backgroundColor: barColors,  // Array of colors for each segment
+          data: yValues  // Data values corresponding to each label
+        }]
+      },// Configure additional options for the chart
+      options: {
+        title: {
+          display: true, // Enable title display
+          text: "The importance of Creativity and Innovation" // Set the chart title
+        }
+      }
+    });
+    </script>
+    </div>
+    </body>
+    </html>
+    
+    
+    

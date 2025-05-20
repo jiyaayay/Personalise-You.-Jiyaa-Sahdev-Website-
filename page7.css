@@ -1,0 +1,148 @@
+/* === CONTAINER STYLING === */
+
+/* Defines a container element */
+.container {
+  position: relative; /* Positions child elements relative to this container */
+  width: 50%; /* Sets container width to 50% of parent element */
+}
+
+/* === IMAGE STYLING === */
+
+/* Makes the image responsive */
+.container img {
+  width: 100%; /* Ensures image fills the container */
+  height: 50%; /* Sets image height to 60% of container */
+  display: inline-block; /* Ensures the image is displayed inline */
+  margin-left: 20px; /* Adds space from the left */
+}
+
+/* === BUTTON STYLING === */
+
+/* Styles the button and places it inside the container */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: -10px; 
+  transform: translate(-50%, -50%); /* Centers the button */
+  -ms-transform: translate(-50%, -50%);
+  background-color: #da5794; /* Button background color */
+  color: rgb(6, 5, 6); /* Text color */
+  font-size: 16px;
+  padding: 12px 24px; /* Adds spacing */
+  border: blueviolet;
+  cursor: pointer; /* Makes the button clickable */
+  border-radius: 0px; /* No rounded corners */
+}
+/* Sets a default width for images */
+img {
+  width: 49%;
+}
+
+
+/* Button hover effect */
+.container .btn:hover {
+  background-color: rgb(232, 30, 236); /* Changes background color on hover */
+}
+
+/* === NAVBAR STYLING === */
+
+/* Defines the navbar */
+.navbar {
+  width: 100%; /* Makes navbar full-width */
+  background-color: #f082c0; /* Sets background color */
+  overflow: auto; /* Ensures content inside the navbar displays correctly */
+}
+
+/* Styling for navbar links */
+.navbar a {
+  float: left; /* Aligns links side by side */
+  text-align: center; /* Centers text within links */
+  padding: 12px; /* Adds internal spacing */
+  color: white; /* Ensures text is readable */
+  text-decoration: none; /* Removes underline */
+  font-size: 17px; /* Defines font size */
+}
+
+/* Navbar hover effect */
+.navbar a:hover {
+  background-color: #fd71f1; /* Changes background color on hover */
+}
+
+/* Active navbar link styling */
+.active {
+  background-color: #d115d8; /* Highlights active link */
+}
+
+/* Responsive navbar: Adjusts layout for small screens */
+@media screen and (max-width: 500px) {
+  .navbar a {
+      float: none; /* Prevents floating for better mobile compatibility */
+      display: block; /* Stacks navbar links vertically */
+  }
+}
+
+/* === PAGE STYLING === */
+
+/* Ensures body and HTML occupy full height */
+body, html {
+  height: 100%;
+}
+
+/* Applies box-sizing rule to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* === BACKGROUND IMAGE STYLING === */
+
+/* Adds a background image with blur effect */
+.bg-image {
+  background-image: url("backgroundimage.avif"); /* Sets background image */
+  background-color: #d115d8; /* Fallback background color */
+
+  /* Adds blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px); /* Safari-specific blur filter */
+
+  display: inline-block; /* Ensures correct inline display */
+
+  /* Full height */
+  height: 70%;
+  width: 100%;
+
+  /* Centers and scales the background */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* === TEXT POSITIONING === */
+
+/* Styles text inside the background */
+.bg-text {
+  background-color: rgba(0,0,0, 0.4); /* Semi-transparent black background */
+  color: white; /* White text */
+  font-weight: bold; /* Bold font */
+  border: 3px solid #f1f1f1; /* Adds border */
+  position: absolute; /* Positions text overlay */
+  top: 50%; /* Centers text */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers text using transform */
+  z-index: 2; /* Ensures text stays above background */
+  width: 80%; /* Sets text box width */
+  padding: 20px; /* Adds internal spacing */
+  text-align: center; /* Centers text */
+}
+
+/* === ICON & CHART STYLING === */
+
+
+/* Applies color to checked elements */
+.checked {
+  color: orange; /* Sets color */
+  text-align: right; /* Aligns text to the right */
+  width: 100%;
+  height: 100%;
+
+.  

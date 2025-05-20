@@ -1,0 +1,144 @@
+/* === Box-Sizing Rule === */
+
+/* This is an incorrect standalone selector `{box-sizing: border-box}`.
+   To apply box-sizing correctly, it should be assigned to all elements. */
+   * {
+    box-sizing: border-box; /* Ensures padding and borders are included in an element's total width/height */
+  }
+  
+  /* === Input Field Styles === */
+  
+  /* Styles for text and password input fields */
+  input[type=text], input[type=password] {
+    width: 100%; /* Makes input fields stretch to full width */
+    padding: 5px; /* Adds internal spacing */
+    margin: 5px 0 22px 0; /* Sets space between input fields */
+    display: inline-block; /* Ensures the input fields flow in the content */
+    border: none; /* Removes default borders */
+    background: #f1f1f1; /* Light gray background */
+  }
+  
+  /* Styles for input fields when they are focused */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd; /* Changes background color when focused */
+    outline: none; /* Removes default focus outline */
+  }
+  
+  /* === Horizontal Rule === */
+  
+  /* Styling for horizontal separator line */
+  hr {
+    border: 1px solid #f1f1f1; /* Light gray solid border */
+    margin-bottom: 25px; /* Provides spacing below the horizontal rule */
+  }
+  
+  /* === Header (h1) Styling === */
+  
+  /* Styling for h1 headers */
+  h1 { 
+    color: rgb(17, 14, 16); /* Dark text color */
+    font-size: 100px; /* Large font size */
+    font-style: italic; /* Italicized text */
+    font-weight: bold; /* Bold text */
+    
+    /* Incorrect property: `text-align: 100px;`
+       Text-align should be set to values like `center`, `left`, or `right`, not a pixel value. */
+  } 
+  
+  /* === Button Styling === */
+  
+  /* General button styling */
+  button {
+    background-color: #04AA6D; /* Green button background */
+    color: white; /* White text */
+    padding: 14px 20px; /* Provides internal spacing */
+    margin: 10px 0; /* Adds margin */
+    border: none; /* Removes default border */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+    width: 100%; /* Makes button full-width */
+    opacity: 0.9; /* Slightly transparent */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    opacity: 1; /* Fully opaque when hovered */
+  }
+  
+  /* === Cancel Button Styling === */
+  
+  /* Special styling for cancel button */
+  .cancelbtn {
+    padding: 14px 20px; /* Adds padding */
+    background-color: #f44336; /* Red background color */
+  }
+  
+  /* Float cancel and signup buttons */
+  .cancelbtn, .signupbtn {
+    float: left; /* Aligns buttons side by side */
+    width: 50%; /* Each button takes half of the width */
+  }
+  
+  /* === Container Styling === */
+  
+  /* Adds padding inside the container */
+  .container {
+    padding: 16px;
+  }
+  
+  /* === Clear Fix === */
+  
+  /* Clears floating elements */
+  .clearfix::after {
+    content: ""; /* Empty content */
+    clear: both; /* Clears floated elements */
+    display: table; /* Ensures proper layout rendering */
+  }
+  
+  /* === Responsive Design === */
+  
+  /* Change button styles for screens smaller than 300px */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%; /* Make buttons full-width for small screens */
+    }
+  }
+  
+  /* === Navbar Styling === */
+  
+  /* Styles for the navigation bar */
+  .navbar {
+    width: 100%; /* Full-width navbar */
+    background-color: #f082c0; /* Light pink background */
+    overflow: auto; /* Ensures content inside the navbar displays properly */
+  }
+  
+  /* Styling for navbar links */
+  .navbar a {
+    float: left; /* Aligns links side by side */
+    text-align: center; /* Centers text within links */
+    padding: 0px; /* Padding is set to zero (might need adjustment for spacing) */
+    color: white; /* White text color */
+    text-decoration: none; /* Removes default underline on links */
+    font-size: 17px; /* Defines font size */
+  }
+  
+  /* Navbar hover effect */
+  .navbar a:hover {
+    background-color: #fd71f1; /* Changes navbar background on hover */
+  }
+  
+  /* Current/active navigation link styling */
+  .active {
+    background-color: #d115d8; /* Purple background for the active link */
+  }
+  
+  /* === Responsive Navbar === */
+  
+  /* Ensures navbar adjusts properly for screens smaller than 500px */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none; /* Prevents floating to ensure vertical stacking */
+      display: block; /* Makes links appear in a vertical list */
+    }
+  }
+  

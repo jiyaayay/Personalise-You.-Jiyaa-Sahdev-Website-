@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="main.css">
+
+  </div>
+  <!-- ==============================
+     Contact Us Section
+     ==============================
+     Main content area for the contact form, including a welcoming message
+     and a form for user inputs.
+-->
+
+
+  <div class="container">
+     <!-- Centered Header for the Contact Section -->
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>For more information, leave us a message:</p>
+    </div>
+    <!-- ==============================
+         Contact Form Layout
+         ==============================
+         Two-column layout: image on the left, form on the right.
+    -->
+    <div class="row">  <!-- Image Column (Left) -->
+      <div class="column"> 
+        <img src="background neon.webp" style="width:500px" style=" height:100%"> <!-- Image for visual appeal, with fixed width for consistency -->
+      </div>
+      <div class="column"> <!-- Form submission will be handled by action_page.php -->
+        <form action="/action_page.php"> 
+          <label for="fname">First Name</label><!-- First Name Input -->
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label> <!-- Last Name Input -->
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.."> <!-- Last Name Input -->
+          <label for="country">Country</label>
+          <select id="country" name="country"> <!-- Country Dropdown -->
+            <option value="australia">Australia</option> <!-- Country Dropdown -->
+            <option value="canada">Canada</option> <!-- Country Dropdown -->
+            <option value="usa">USA</option> <!-- Country Dropdown -->
+          </select>
+           <!-- Message Textarea -->
+          <label for="subject">Subject</label> <!-- Submit Button -->
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  

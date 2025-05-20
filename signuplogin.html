@@ -1,0 +1,100 @@
+
+<!-- ============================
+     External CSS File Linking
+     ============================
+     Links the signup form to the external stylesheet (signup.css) for styling.
+     Make sure the CSS file is correctly named and placed in the same directory.
+-->
+
+
+
+<link rel="stylesheet" href="signup.css">
+<form action="action_page.php" style="border:1px solid #ccc">
+  <!-- ============================
+     Sign Up Form Container
+     ============================
+     This form allows users to create a new account. It includes fields for
+     email, password, and a checkbox for remembering the user. The form data
+     is sent to 'action_page.php' for processing when submitted.
+-->
+    <div class="container">
+      <!-- ============================
+             Form Heading
+             ============================
+             Provides the main title and introductory message for the form.
+        -->
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+  <!-- ============================
+             Email Input Field
+             ============================
+             Collects the user's email address. The 'required' attribute ensures
+             the field cannot be left empty before submission.
+        -->
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <!-- ============================
+             Password Input Field
+             ============================
+             Collects the user's password. The 'type="password"' attribute hides
+             the entered characters for security.
+        -->
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <!-- ============================
+             Password Input Field
+             ============================
+             Collects the user's password. The 'type="password"' attribute hides
+             the entered characters for security.
+        -->
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <!-- ============================
+             Password Confirmation Field
+             ============================
+             Asks the user to repeat the password to ensure accuracy.
+        -->
+  
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <!-- ============================
+             Remember Me Checkbox
+             ============================
+             Provides an option to remember the user for future visits.
+             The 'checked' attribute ensures the checkbox is pre-checked by default.
+        -->
+  
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <!-- ============================
+             Terms and Privacy Link
+             ============================
+             Includes a link to the site's terms and privacy policy. Update the
+             'href' attribute to point to the actual terms and privacy page.
+        -->
+  
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>  <!-- Cancel Button (Type 'button' to avoid submitting the form) -->
+        <button type="submit" class="signupbtn">Sign Up</button> <!-- Submit Button (Type 'submit' to trigger the form action) -->
+        <!-- ============================
+             Form Buttons
+             ============================
+             Two buttons are provided: a 'Cancel' button that can be linked to
+             a different page, and a 'Sign Up' button to submit the form.
+        -->
+      </div>
+    </div>
+  </form>
+  <div class="navbar">
+    <a class="active" href="page4.html"><i class="fa fa-fw fa-home"></i> Home</a> <!-- Home Page Link -->
+    <a href="signuplogin.html"><i class="fa fa-fw fa-search"></i> Login/Sign Up </a> <!-- Login/Sign Up Page Link -->
+    <a href="page8.html"><i class="fa fa-fw fa-envelope"></i> Gallery</a> <!-- Gallery Page Link -->
+    <a href="medialibraryreal.html"><i class="fa fa-fw fa-user"></i> Media Library </a> <!-- Media Library Link -->
+    <a href="aboutpage.html"><i class="fa fa-fw fa-user"></i> About Us! </a> <!-- About Us Page Link -->
+    <a href="page3.html"><i class="fa fa-fw fa-user"></i> Contact US</a> <!-- Contact Us Page Link -->
+    
+    
+  </div>

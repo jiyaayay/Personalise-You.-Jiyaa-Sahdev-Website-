@@ -1,0 +1,127 @@
+
+/* Navbar Styling */
+.navbar {
+  width: 100%; /* Ensures the navbar stretches across the full width */
+  background-color: #f082c0; /* Sets the background color of the navbar */
+  overflow: auto; /* Ensures content inside the navbar remains visible */
+}
+
+/* Navbar Links */
+.navbar a {
+  float: left; /* Aligns links to the left */
+  text-align: center; /* Centers text inside links */
+  padding: 12px; /* Adds spacing around the links */
+  color: white; /* Sets text color */
+  text-decoration: none; /* Removes underline from links */
+  font-size: 17px; /* Sets font size */
+}
+
+/* Navbar Hover Effect */
+.navbar a:hover {
+  background-color: #fd71f1; /* Changes background color when hovered */
+}
+
+/* Active Navbar Link */
+.active {
+  background-color: #d115d8; /* Highlights the active link */
+}
+
+/* Image Container */
+.container {
+  position: relative; /* Ensures child elements are positioned relative to the container */
+  width: 20%; /* Sets the width of the container */
+  margin-top: 300px; /* Adds space above the container */
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  
+
+}
+
+/* Image Styling */
+.image1, .image2, .image3, .image4 {
+  opacity: 1; /* Makes images fully visible */
+  display: inline-block; /* Ensures images appear in the layout */
+  width: 40%; /* Sets images to full container width */
+  height: 50%; /* Maintains aspect ratio */
+  transition: .5s ease; /* Smooth transition effect */
+  backface-visibility: hidden; /* Prevents flickering */
+  margin-top: 10px; /* Adds vertical space */
+  margin-left: 50%; 
+}
+
+/* Middle Overlay (Hidden Text/Elements) */
+.middle {
+  transition: .5s ease; /* Ensures smooth transitions */
+  opacity: 0; /* Initially hidden */
+  position: absolute; /* Positioned absolutely within container */
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering technique */
+  text-align: center; /* Centers text */
+}
+
+/* Hover Effects */
+.container:hover .image {
+  opacity: 0.3; /* Dims image on hover */
+  
+}
+
+.container:hover .middle {
+  opacity: 1; /* Reveals overlay content on hover */
+}
+
+/* Text Styling */
+.text {
+  background-color: #04AA6D; /* Sets background color */
+  color: white; /* Text color */
+  font-size: 16px; /* Sets font size */
+  padding: 16px 32px; /* Adds padding */
+}
+
+/* Body Styling */
+body {
+  background-color: rgb(230, 173, 215); /* Sets background color */
+}
+
+/* Heading (h1) Styling */
+h1 {
+  text-align: center; /* Centers text */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Uses bold font */
+  padding: 10px; /* Adds spacing */
+  font-size: 50px; /* Sets large font size */
+}
+
+/* Paragraph Styling */
+p {
+  text-align: center; /* Centers text */
+  font-family: sans-serif; /* Uses a simple font */
+  font-weight: bold; /* Makes text bold */
+  font-size: x-large; /* Enlarges font */
+  color: rgb(216, 23, 219); /* Sets text color */
+}
+
+/* Title Styling */
+.title {
+  color: chocolate; /* Sets text color */
+  text-align: center; /* Centers text */
+  width: 100px; /* Defines width */
+  height: 100px; /* Defines height */
+}
+
+/* Chart & Graph Styling */
+.graph-wrapper {
+  position: absolute; /* Positions element relative to page */
+  top: 10%; /* Defines vertical position */
+  left: 30px; /* Defines horizontal position */
+  transform: translateY(50%); /* Centers element */
+  z-index: 999; /* Ensures visibility over other elements */
+  background-color: aliceblue; /* Sets background color */
+  color: rgb(9, 8, 8); /* Sets text color */
+}
+
+/* Background Video */
+.background-video {
+  width: 100%; /* Makes video span full width */
+  height: 100%; /* Makes video span full height */
+}

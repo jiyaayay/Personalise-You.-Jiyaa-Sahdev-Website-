@@ -1,0 +1,140 @@
+<!-- ===========================
+     Link to External CSS File
+     ===========================
+     This line connects the HTML file to the external stylesheet (main2.css),
+     which contains the styles for this page. Ensure that the CSS file is in
+     the correct location and named exactly as referenced here.
+     -->
+
+
+<link rel="stylesheet" href="main2.css">
+
+<!-- =======================
+     About Us Main Section
+     =======================
+     This section introduces the "About Us" content, including the company's mission
+     and an introduction to the team. It typically sits at the top of the page.
+-->
+<div class="about-section">
+  <!-- Main Heading for the About Section -->
+    <h1>About Us</h1>
+    <p>PERSONALISE YOU, where your dreams come true!</p>
+    <p>MEET OUR TEAM </p>
+  </div>
+  <!-- ============================
+     Team Members Container Row
+     ============================
+     This row will contain all the team member cards, each defined within a separate column.
+     The .row class should handle the basic grid structure.
+-->
+  
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <!-- =========================
+         First Team Member Card
+         =========================
+         Each team member is contained within a .column div, which allows for
+         easy scaling if more members are added.
+    -->
+    <div class="column">
+       <!-- Individual Team Member Card -->
+      <div class="card1">
+        <!-- =========================
+                 Team Member Photo
+                 =========================
+                 Ensure the image file 'womann.jpg' is correctly placed in the image directory.
+                 The 'alt' attribute provides alternate text for accessibility.
+            -->
+        <img src="womann.jpg" alt="jiyaa" style="width:100%">
+        <!-- =========================
+                 Team Member Details
+                 =========================
+                 Contains the member's name, title, bio, contact information, and contact button.
+            -->
+        <div class="container">
+          <h2>Jiyaa Sahdev</h2>
+          <p class="title"><strong>CEO & Founder</strong></p>
+          <p>She found this company back in 2000! Isn't that impressive!</p>
+          <p>jiyaa@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <!-- ===============================
+         Placeholder for Additional Team Members
+         ===============================
+         Duplicate this block for each additional team member.
+         Ensure consistent styling and content formatting.
+    -->
+
+    <!-- ============================
+     Second Team Member - Mike Ross
+     ============================
+     This card introduces Mike Ross, the Director and Business Designer.
+-->
+  
+    <div class="column">
+      <div class="card2">
+        <img src="mannn.jpg" alt="Mike" style="width:100%">
+        <!-- Card Content Container -->
+        <div class="container">
+          <!-- Team Member Name -->
+          <h2>Mike Ross</h2>
+          <!-- Job Title -->
+            <!-- Strong emphasis added for better visual impact -->
+          <p class="title"><strong>Director and business designer</strong> </p>
+          <!-- Short Description -->
+            <!-- Brief note on Mike's role and focus area -->
+
+          <p>He's your first point of contact for anything ART !</p>
+          <!-- Contact Email Address -->
+            <!-- Ensure the email address is accurate -->
+          <p>mike@gmail.com</p>
+          <!-- Contact Button -->
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <!-- ============================
+     Third Team Member - Carla
+     ============================
+     This card introduces Carla, the Designer.
+-->
+  
+    <div class="column">
+      <div class="card3">
+        <!-- Profile Picture of the Team Member -->
+        <img src="lady image.jpeg" alt="Carla" style="width:100%">
+        <!-- Card Content Container -->
+        <div class="container">
+          <!-- Team Member Name -->
+          <h2>Carla</h2>
+          <p class="title"><strong>Designer</strong></p>
+           <!-- Short Description -->
+            <!-- Short and direct description of Carla's role -->
+          <p>She's here to help you design!</p>
+          <p>Carla@email.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================
+     Navigation Bar
+     ============================
+     This navigation bar provides quick links to various pages.
+     Ensure the pages are correctly linked and the icon classes are properly referenced.
+-->
+
+
+  <div class="navbar">
+    <!-- Home Page Link -->
+    <!-- 'active' class indicates the current page -->
+    <a class="active" href="page4.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="signuplogin.html"><i class="fa fa-fw fa-search"></i> Login/Sign Up </a> <!-- Login/Sign Up Link -->
+    <a href="page8.html"><i class="fa fa-fw fa-envelope"></i> Gallery</a>  <!-- Gallery Page Link -->
+    <a href="medialibraryreal.html"><i class="fa fa-fw fa-user"></i> Media Library </a><!-- Media Library Link -->
+    <a href="aboutpage.html"><i class="fa fa-fw fa-user"></i> About Us! </a> <!-- About Us Page Link -->
+    <a href="page3.html"fa fa-fw fa-user></i>Contact US </a><!-- Contact Us Page Link -->
+  </div>
+  

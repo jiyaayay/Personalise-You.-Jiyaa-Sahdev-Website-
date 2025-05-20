@@ -1,0 +1,133 @@
+/* === General Styles === */
+
+/* Styling for the body element to define default properties */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Sets the font family to a widely used sans-serif typeface */
+  margin: 0; /* Removes the default margin to allow full-width content */
+}
+
+/* Applies the box-sizing rule to the entire document */
+html {
+  box-sizing: border-box; /* Ensures that padding and borders are included in the element’s total width and height */
+}
+
+/* Applies box-sizing rule to all elements, including pseudo-elements */
+*, *:before, *:after {
+  box-sizing: inherit; /* Makes all elements inherit the box-sizing property from HTML */
+}
+
+/* === Column Layout === */
+
+/* Creates a flexible column layout for a grid-like structure */
+.column {
+  float: left; /* Floats the columns so they appear side by side */
+  width: 33.3%; /* Makes each column take up one-third of the parent container */
+  margin-bottom: 16px; /* Adds spacing below each column */
+  padding: 0 8px; /* Adds padding inside each column to prevent content from touching the edges */
+}
+
+/* === Card Styling === */
+
+/* Provides a clean and modern card layout */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adds a soft shadow for a subtle depth effect */
+  margin: 8px; /* Ensures proper spacing around each card */
+}
+
+/* === About Section Styling === */
+
+/* Creates a styled section for the "About" page */
+.about-section {
+  padding: 50px; /* Adds ample spacing inside the section */
+  text-align: center; /* Centers the content within the section */
+  background-color: #474e5d; /* Sets a dark gray background color */
+  color: white; /* Ensures text is readable with high contrast */
+}
+
+/* === Container Styling === */
+
+/* Defines container properties to manage padding */
+.container {
+  padding: 0 16px; /* Provides left and right padding */
+}
+
+/* Clears floats to ensure proper layout rendering */
+.container::after, .row::after {
+  content: ""; /* Adds an empty content */
+  clear: both; /* Clears floated elements */
+  display: table; /* Ensures elements are treated as a block for layout purposes */
+}
+
+/* === Text Styling === */
+
+/* Defines styling for text inside title elements */
+.title {
+  color: grey; /* Sets the title text color to gray */
+}
+
+/* === Button Styling === */
+
+/* General styling for button elements */
+.button {
+  border: none; /* Removes the default border */
+  outline: 0; /* Removes the outline that appears when clicked */
+  display: inline-block; /* Ensures buttons are displayed inline */
+  padding: 8px; /* Adds spacing inside the button */
+  color: white; /* Sets the text color */
+  background-color: #000; /* Sets the background to black */
+  text-align: center; /* Centers the text */
+  cursor: pointer; /* Makes it clear the button is interactive */
+  width: 100%; /* Expands the button across the full width of its container */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+  background-color: #555; /* Changes the background color when the mouse hovers over the button */
+}
+
+/* === Responsive Design === */
+
+/* Adjusts column layout for smaller screens */
+@media screen and (max-width: 650px) {
+  .column {
+      width: 100%; /* Makes each column take up the full width */
+      display: block; /* Ensures each column appears as a block element */
+  }
+}
+
+/* === Navigation Bar Styling === */
+
+/* Styles the navigation bar */
+.navbar {
+  width: 100%; /* Ensures the navbar spans the full width */
+  background-color: #f082c0; /* Sets a vibrant pink background */
+  overflow: auto; /* Ensures that content inside the navbar is properly displayed */
+}
+
+/* Styling for navbar links */
+.navbar a {
+  float: left; /* Aligns links side by side */
+  text-align: center; /* Centers the text within each navbar link */
+  padding: 12px; /* Adds spacing to make the links easier to click */
+  color: white; /* Ensures text is readable */
+  text-decoration: none; /* Removes default underline on links */
+  font-size: 17px; /* Sets font size for readability */
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
+  background-color: #fd71f1; /* Sets a pinkish background color when hovered */
+}
+
+/* Active navigation link styling */
+.active {
+  background-color: #d115d8; /* Highlights the currently active navigation item */
+}
+
+/* Responsive navbar styling for small screens */
+@media screen and (max-width: 500px) {
+  .navbar a {
+      float: none; /* Prevents floating to ensure vertical stacking */
+      display: block; /* Displays each navbar item as a block for better readability on small screens */
+  }
+}
